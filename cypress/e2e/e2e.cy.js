@@ -27,10 +27,10 @@ describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
          cy.Produto('Autumn Pullie', 'M', 'Purple')
 
         cy.visit('carrinho')
-        cy.get('tr.cart_item').should('have.length', 4)
+        cy.get('tr.cart_item').should('have.length', 3)
         
         cy.get('.checkout-button').click()
         cy.Endereço('Gabriel', 'Logan', 'Teste', 'Brasil', 'Avenida', 'Casa', 'Paulista', 'Pernambuco', '55480000', '(79) 3426-8871')
-        cy.get('.page-title').should('be.visible')
+        cy.get('.page-title').should('have.text', 'Checkout')
     });
 });
