@@ -2,9 +2,6 @@ describe('Funcionalidade login', () => {
   beforeEach(() => {
     cy.visit('minha-conta')
   });
-  it('Login utilizando custom commands', () => {
-   cy.Login()
-  });
 
   const usuarios = require('../e2e/dados/example.json')
 usuarios.forEach( usuario => {
