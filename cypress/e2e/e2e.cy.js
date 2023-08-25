@@ -17,8 +17,7 @@ describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.Produto('Abominable Hoodie', 'XS', 'Blue')
        
         cy.visit('produtos/page/2/')
-        cy.Produto('Atlas Fitness Tank', 'XS', 'Blue')
-        
+        cy.Produto('Atomic Endurance Running Tee (Crew-Neck)', 'M', 'Black')
         
         cy.visit('produtos/page/2/')
          cy.Produto('Atomic Endurance Running Tee (Crew-Neck)', 'S', 'Black')
