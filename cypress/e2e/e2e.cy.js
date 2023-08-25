@@ -1,5 +1,6 @@
 describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     beforeEach(() => {
+        cy.visit('minha-conta')
           cy.get('#username').type('logangaabriel@gmail.com')
       cy.get('#password').type('biel@123')
       cy.contains('input[type=submit]', 'Login').click() 
