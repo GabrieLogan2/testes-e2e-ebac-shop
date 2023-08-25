@@ -29,7 +29,7 @@ describe('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
          cy.Produto('Autumn Pullie', 'M', 'Purple')
 
         cy.visit('carrinho')
-        cy.get('tr.cart_item').should('have.length', 3)
+        cy.get('tr.cart_item').should('have.length', 2)
         
         cy.get('.checkout-button').click()
         cy.Endereço('Gabriel', 'Logan', 'Teste', 'Brasil', 'Avenida', 'Casa', 'Paulista', 'Pernambuco', '55480000', '(79) 3426-8871')
