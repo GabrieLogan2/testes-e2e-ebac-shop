@@ -3,7 +3,9 @@ describe('Endereço', () => {
         cy.visit('minha-conta')
     });
     it('Iserindo endereço do usuário', () => {
-        cy.Login()
+           cy.get('#username').type('logangaabriel@gmail.com')
+      cy.get('#password').type('biel@123')
+      cy.contains('input[type=submit]', 'Login').click() 
         cy.Endereço()
         cy.contains('.woocommerce-message', 'Endereço alterado com sucesso').should('be.visible')
 
